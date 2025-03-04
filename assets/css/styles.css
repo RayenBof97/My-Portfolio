@@ -400,7 +400,6 @@ img {
 }
 
 /* ===== EXPERIENCE IMAGES (Now inside the box) ===== */
-/* ===== EXPERIENCE IMAGES (Now inside the box) ===== */
 .experience__images {
   display: flex;
   gap: 1rem;
@@ -460,6 +459,112 @@ img {
 }
 
 
+/* ===== PROJECTS ===== */
+.projects.section {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center; /* Center the section title */
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center all items */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 0 1rem; /* Padding for better spacing */
+}
+
+.projects__item {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex: 1 1 300px; /* Flexbox to adjust size */
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__item:hover {
+  transform: translateY(-10px);
+}
+
+.project__logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project__logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.project__logo img:hover {
+  transform: scale(1.1);
+}
+
+.projects__description {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.projects__title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.projects__date {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.projects__text {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.projects__images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Center the images */
+}
+
+.projects__img {
+  width: 48%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.projects__img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .projects__container {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+
+  .projects__item {
+    padding: 1.5rem;
+    width: 100%; /* Ensure items fill the container on smaller screens */
+  }
+
+  .projects__img {
+    width: 100%;
+  }
+}
 
 
 /* ===== CONTACT =====*/
