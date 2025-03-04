@@ -169,33 +169,44 @@
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="experience section" id="experience">
-                <h2 class="section-title">Experience</h2>
+            <!--===== EXPERIENCE =====-->
+<section class="experience section" id="experience">
+    <h2 class="section-title">Experience</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
+    <div class="experience__container bd-grid">
+        <!-- Internship Experience -->
+        <div class="experience__item">
+            <!-- Company Logo -->
+            <div class="experience__logo">
+                <img src="assets/img/visteon.png" alt="Visteon Logo" class="experience__logo-img">
+            </div>
+
+            <!-- Experience Description -->
+            <div class="experience__description">
+                <h3 class="experience__title">Embedded Software and Control Internship</h3>
+                <span class="experience__company">Visteon Corporation</span>
+                <span class="experience__date">July - August 2024 (1 month)</span>
+                <p class="experience__text">
+                    During my internship at Visteon, I worked on industrial communication protocols, particularly Modbus over RS485. 
+                    I also explored Fuzzy Logic Control and the Kalman Filter for state estimation. A key challenge I tackled was improving 
+                    temperature regulation in a PCB oven machine. This experience strengthened my technical expertise and problem-solving 
+                    skills while allowing me to collaborate with industry experts.
+                </p>
+
+                <!-- Work Images (Now inside the same box) -->
+                <div class="experience__images">
+                    <img src="assets/img/visteon2.jfif" alt="Project Image 1" class="experience__img" onclick="openLightbox(this)">
+                    <img src="assets/img/plant.png" alt="Project Image 2" class="experience__img" onclick="openLightbox(this)">
                 </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Lightbox Container (Hidden by default) -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">

@@ -50,7 +50,26 @@ const sr = ScrollReveal({
     delay: 200,
 //     reset: true
 });
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text , .skills__category-title',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img ,.skills__icons',{delay: 400}); 
+
+// Function to open the lightbox
+function openLightbox(imgElement) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightboxImg.src = imgElement.src;
+    lightbox.classList.add("show"); // Add show class to make it visible
+}
+
+// Function to close the lightbox
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("show"); // Remove show class to hide it
+}
+
+// Ensure lightbox is hidden on page load
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("lightbox").classList.remove("show");
+});
+
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text , .skills__category-title , .experience__description , .experience__logo',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img ,.skills__icons ,.experience__images',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
