@@ -1,277 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Rayen's Portfolio</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio website complete</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Rayen's Portfolio</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-menu'></i>
+        </div>
+      </nav>
+    </header>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">Hi, <br>I am <span class="home__title-color">Rayen</span>
+            <br>
+            <span class="home__subtitle">Embedded Software Engineering student</span>
+          </h1>
+          <a href="assets/cv.pdf" target="_blank" class="button">My CV</a>
+        </div>
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/rayen-bouafif/" target="_blank" class="home__social-icon">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://github.com/RayenBof97" target="_blank" class="home__social-icon">
+            <i class='bx bxl-github'></i>
+          </a>
+        </div>
+        <div class="home__img">
+          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+              <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+            </mask>
+            <g mask="url(#mask0)">
+              <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+              <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+            </g>
+          </svg>
+        </div>
+      </section>
+      <!--===== ABOUT =====-->
+      <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="">
+          </div>
+          <div>
+            <h2 class="about__subtitle">I am Rayen Bouafif</h2>
+            <p class="about__text">Hello there! I’m Rayen Bouafif, a 23-year-old electrical engineering student passionate about embedded systems and new technologies. I’ve been diving into microcontroller architectures like STM32, NXP, and TI, pushing myself to get better at C embedded development and exploring real-time operating systems like FreeRTOS and Zephyr. I’m also into digital signal processing, control systems, and IoT, with experience building university projects like autonomous robots. What gets me excited is the chance to take on new challenges, learn from experienced people, and apply what I know to create real-world solutions. Right now, I’m looking for new opportunities in the embedded field where I can grow and continue to do what I love while making a meaningful impact.</p>
+          </div>
+        </div>
+      </section>
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container bd-grid">
+          <div>
+            <p class="skills__text">I specialize in <strong>embedded systems</strong>, with expertise in both hardware and software development. Below are my technical skills categorized for clarity. </p>
+            <!-- Programming Languages -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Programming Languages</h3>
+              <div class="skills__icons">
+                <div class="skills__icon-item">
+                  <img src="assets/img/cplusplus.png" alt="C++ Icon" class="skills__icon">
+                  <span class="skills__name">C/C++</span>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+                <div class="skills__icon-item">
+                  <img src="assets/img/pythonpng.png" alt="python Icon" class="skills__icon">
+                  <span class="skills__name">Python</span>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                <div class="skills__icon-item">
+                  <img src="assets/img/java.png" alt="Java Icon" class="skills__icon">
+                  <span class="skills__name">Java</span>
                 </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Rayen</span><br> <span class="home__subtitle">Embedded Software Engineering student</span></h1>
-                    <a href="assets/cv.pdf" target="_blank" class="button">My CV</a>
+              </div>
+            </div>
+            <!-- Embedded Systems -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Embedded Systems</h3>
+              <div class="skills__icons">
+                <div class="skills__icon-item">
+                  <img src="assets/img/STM.png" alt="STM32 Icon" class="skills__icon">
+                  <span class="skills__name">STM32</span>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/rayen-bouafif/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/RayenBof97" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                <div class="skills__icon-item">
+                  <img src="assets/img/freertos.png" alt="FreeRTOS Icon" class="skills__icon">
+                  <span class="skills__name">FreeRTOS</span>
                 </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
+                <div class="skills__icon-item">
+                  <img src="assets/img/zephyr.png" alt="FreeRTOS Icon" class="skills__icon">
+                  <span class="skills__name">Zephyr</span>
                 </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I am Rayen Bouafif</h2>
-                        <p class="about__text">Hello there! I’m Rayen Bouafif, a 23-year-old electrical engineering student passionate about embedded systems and new technologies. I’ve been diving into microcontroller architectures like STM32, NXP, and TI, pushing myself to get better at C embedded development and exploring real-time operating systems like FreeRTOS and Zephyr. I’m also into digital signal processing, control systems, and IoT, with experience building university projects like autonomous robots. What gets me excited is the chance to take on new challenges, learn from experienced people, and apply what I know to create real-world solutions. Right now, I’m looking for new opportunities in the embedded field where I can grow and continue to do what I love while making a meaningful impact.</p>           
-                    </div>                                   
+                <div class="skills__icon-item">
+                  <i class='bx bx-code-alt skills__icon'></i>
+                  <span class="skills__name">VHDL</span>
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-            
-                <div class="skills__container bd-grid">          
-                    <div>
-                        
-                        <p class="skills__text">I specialize in <strong>embedded systems</strong>, with expertise in both hardware and software development. Below are my technical skills categorized for clarity.</p>
-                        
-                        <!-- Programming Languages -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Programming Languages</h3>
-                            <div class="skills__icons">
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/cplusplus.png" alt="C++ Icon" class="skills__icon">
-                                    <span class="skills__name">C/C++</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/pythonpng.png" alt="python Icon" class="skills__icon">
-                                    <span class="skills__name">Python</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/java.png" alt="Java Icon" class="skills__icon">
-                                    <span class="skills__name">Java</span>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <!-- Embedded Systems -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Embedded Systems</h3>
-                            <div class="skills__icons">
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/STM.png" alt="STM32 Icon" class="skills__icon">
-                                    <span class="skills__name">STM32</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/freertos.png" alt="FreeRTOS Icon" class="skills__icon">
-                                    <span class="skills__name">FreeRTOS</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/zephyr.png" alt="FreeRTOS Icon" class="skills__icon">
-                                    <span class="skills__name">Zephyr</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <i class='bx bx-code-alt skills__icon'></i>
-                                    <span class="skills__name">VHDL</span>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <!-- Tools & Platforms -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Tools & Platforms</h3>
-                            <div class="skills__icons">
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/github.png" alt="github Icon" class="skills__icon">
-                                    <span class="skills__name">Github</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/git.png" alt="Git Icon" class="skills__icon">
-                                    <span class="skills__name">Git</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/bash.png" alt="Bash Icon" class="skills__icon">
-                                    <span class="skills__name">Shell</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/linux.png" alt="Linux Icon" class="skills__icon">
-                                    <span class="skills__name">Linux</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Other Skills -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Other Skills</h3>
-                            <div class="skills__icons">
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/Matlab.png" alt="Matlab Icon" class="skills__icon">
-                                    <span class="skills__name">Matlab</span>
-                                </div>
-                                <div class="skills__icon-item">
-                                    <img src="assets/img/opencv.png" alt="Linux Icon" class="skills__icon">
-                                    <span class="skills__name">OpenCV</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <!-- Tools & Platforms -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Tools & Platforms</h3>
+              <div class="skills__icons">
+                <div class="skills__icon-item">
+                  <img src="assets/img/github.png" alt="github Icon" class="skills__icon">
+                  <span class="skills__name">Github</span>
                 </div>
-            </section>
-
-            <!--===== EXPERIENCE =====-->
-<section class="experience section" id="experience">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="experience__container bd-grid">
-        <!-- Internship Experience -->
-        <div class="experience__item">
+                <div class="skills__icon-item">
+                  <img src="assets/img/git.png" alt="Git Icon" class="skills__icon">
+                  <span class="skills__name">Git</span>
+                </div>
+                <div class="skills__icon-item">
+                  <img src="assets/img/bash.png" alt="Bash Icon" class="skills__icon">
+                  <span class="skills__name">Shell</span>
+                </div>
+                <div class="skills__icon-item">
+                  <img src="assets/img/linux.png" alt="Linux Icon" class="skills__icon">
+                  <span class="skills__name">Linux</span>
+                </div>
+              </div>
+            </div>
+            <!-- Other Skills -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Other Skills</h3>
+              <div class="skills__icons">
+                <div class="skills__icon-item">
+                  <img src="assets/img/Matlab.png" alt="Matlab Icon" class="skills__icon">
+                  <span class="skills__name">Matlab</span>
+                </div>
+                <div class="skills__icon-item">
+                  <img src="assets/img/opencv.png" alt="Linux Icon" class="skills__icon">
+                  <span class="skills__name">OpenCV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--===== EXPERIENCE =====-->
+      <section class="experience section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience__container bd-grid">
+          <!-- Internship Experience -->
+          <div class="experience__item">
             <!-- Company Logo -->
             <div class="experience__logo">
-                <img src="assets/img/visteon.png" alt="Visteon Logo" class="experience__logo-img">
+              <img src="assets/img/visteon.png" alt="Visteon Logo" class="experience__logo-img">
             </div>
-
             <!-- Experience Description -->
             <div class="experience__description">
-                <h3 class="experience__title">Embedded Software and Control Internship</h3>
-                <span class="experience__company">Visteon Corporation</span>
-                <span class="experience__date">July - August 2024 (1 month)</span>
-                <p class="experience__text">
-                    During my internship at Visteon, I worked on industrial communication protocols, particularly Modbus over RS485. 
-                    I also explored Fuzzy Logic Control and the Kalman Filter for state estimation. A key challenge I tackled was improving 
-                    temperature regulation in a PCB oven machine. This experience strengthened my technical expertise and problem-solving 
-                    skills while allowing me to collaborate with industry experts.
-                </p>
-
-                <!-- Work Images (Now inside the same box) -->
-                <div class="experience__images">
-                    <img src="assets/img/visteon2.jfif" alt="Project Image 1" class="experience__img" onclick="openLightbox(this)">
-                    <img src="assets/img/plant.png" alt="Project Image 2" class="experience__img" onclick="openLightbox(this)">
-                </div>
+              <h3 class="experience__title">Embedded Software and Control Internship</h3>
+              <span class="experience__company">Visteon Corporation</span>
+              <span class="experience__date">July - August 2024 (1 month)</span>
+              <p class="experience__text"> During my internship at Visteon, I worked on industrial communication protocols, particularly Modbus over RS485. I also explored Fuzzy Logic Control and the Kalman Filter for state estimation. A key challenge I tackled was improving temperature regulation in a PCB oven machine. This experience strengthened my technical expertise and problem-solving skills while allowing me to collaborate with industry experts. </p>
+              <!-- Work Images (Now inside the same box) -->
+              <div class="experience__images">
+                <img src="assets/img/visteon2.jfif" alt="Project Image 1" class="experience__img" onclick="openLightbox(this)">
+                <img src="assets/img/plant.png" alt="Project Image 2" class="experience__img" onclick="openLightbox(this)">
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<!--===== PROJECTS =====-->
-<section class="projects section" id="projects">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="projects__container bd-grid">
-        <!-- Project 1 -->
-        <div class="projects__item">
+      </section>
+      <!--===== PROJECTS =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects__container bd-grid">
+          <!-- Project 1 -->
+          <div class="projects__item">
             <div class="project__logo">
                 <a href="https://github.com/RayenBof97/STM32F4xx-Drivers-From-Scratch" target="_blank">
-                    <img src="assets/img/github.png" alt="GitHub Logo" class="experience__logo-img">
+                  <img src="assets/img/github.png" alt="GitHub Logo" class="experience__logo-img">
                 </a>
-            </div>
+              </div>
+              
             <!-- Project Title and Description -->
             <div class="projects__description">
-                <h3 class="projects__title">STM32F4xx Drivers (GPIO, SPI , I²C, USART) From Scratch</h3>
-                <span class="projects__date">December 2024 - February 2025</span>
-                <p class="projects__text">
-                    In this project, I developed custom driver libraries for STM32F4xx microcontrollers, written entirely from scratch as part of my learning journey in STM32 Architectures and Embedded C development. It provides basic and modular functions to configure and interact with peripherals such as GPIO, UART, SPI, and I2C, helping me deepen my understanding of embedded systems and microcontroller programming.
-                    This project is intended solely for personal learning and to deepen my understanding of STM32 architectures. It is not meant for practical use, especially considering the existence of the HAL library, which is much more efficient than my implementation.
-                </p>
+              <h3 class="projects__title">STM32F4xx Drivers (GPIO, SPI , I²C, USART) From Scratch</h3>
+              <span class="projects__date">December 2024 - February 2025</span>
+              <p class="projects__text"> In this project, I developed custom driver libraries for STM32F4xx microcontrollers, written entirely from scratch as part of my learning journey in STM32 Architectures and Embedded C development. It provides basic and modular functions to configure and interact with peripherals such as GPIO, UART, SPI, and I2C, helping me deepen my understanding of embedded systems and microcontroller programming. This project is intended solely for personal learning and to deepen my understanding of STM32 architectures. It is not meant for practical use, especially considering the existence of the HAL library, which is much more efficient than my implementation. </p>
             </div>
-
             <!-- Project Images (Clickable for Lightbox) -->
             <div class="projects__images">
-                <img src="assets/img/I2c.png" alt="Project Image 1" class="projects__img" onclick="openLightbox(this)">
-                <img src="assets/img/refman.png" alt="Project Image 2" class="projects__img" onclick="openLightbox(this)">
+              <img src="assets/img/I2c.png" alt="Project Image 1" class="projects__img" onclick="openLightbox(this)">
+              <img src="assets/img/refman.png" alt="Project Image 2" class="projects__img" onclick="openLightbox(this)">
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<!-- Lightbox Container (Hidden by default) -->
-<div id="lightbox" class="lightbox">
-    <span class="close" onclick="closeLightbox()">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-</div>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact Me !</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Thank you for reading !</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>                <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+      </section>
+      <!-- Lightbox Container (Hidden by default) -->
+      <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+      </div>
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact__container bd-grid">
+          <!-- Contact Card -->
+          <div class="contact__card">
+            <!-- Your Photo -->
+            <div class="contact__photo">
+              <img src="assets/img/perfil.jfif" alt="Your Name" class="contact__photo-img">
             </div>
-            <p class="footer__copy">Phone : +216 29 049 373</p>
-            <p class="footer__copy">Email : bouafifrayen01@gmail.com</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-
-        </body>
+      
+            <!-- Your Name and Job Title -->
+            <div class="contact__details">
+              <h3 class="contact__name">Rayen Bouafif</h3>
+              <span class="contact__title">Embedded Software Enginnering student</span>
+            </div>
+      
+            <!-- Contact Information -->
+            <div class="contact__info">
+              <p class="contact__email">
+                <a href="mailto:bouafifrayen01@gmail.com">bouafifrayen01@gmail.com</a>
+              </p>
+              <p class="contact__phone">
+                <a href="tel:+1234567890">+216 29 049 373</a>
+              </p>
+            </div>
+      
+            <!-- Optional: Social Media Links -->
+            <div class="contact__social">
+                <a href="https://www.linkedin.com/in/rayen-bouafif/" target="_blank" class="contact__social-icon">
+                  <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/RayenBof97" target="_blank" class="contact__social-icon">
+                  <i class='bx bxl-github'></i>
+                </a>
+              </div>
+      </section>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Thank you for reading !</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="#" class="footer__icon">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+      <p class="footer__copy">Phone : +216 29 049 373</p>
+      <p class="footer__copy">Email : bouafifrayen01@gmail.com</p>
+    </footer>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
