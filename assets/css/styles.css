@@ -521,6 +521,15 @@ img {
   line-height: 1.6;
 }
 
+.project__video {
+  width: 100%; /* Makes the video take the full width of its container */
+  max-width: 800px; /* Optional: Set a max width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Prevents extra space below the video */
+  margin: 0 auto; /* Centers the video */
+}
+
+
 /* ===== Project IMAGES (Now inside the box) ===== */
 .project__images {
   display: flex;
