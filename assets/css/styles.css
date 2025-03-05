@@ -468,12 +468,18 @@ img {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid #000; /* Adds a solid line between the projects */
+  padding-bottom: 20px; /* Adjust the padding as needed */
+  margin-bottom: 20px; /* Adds some spacing between the items */
 }
 
 .projects__item:hover {
   transform: translateY(-10px);
 }
 
+.projects__item:last-child {
+  border-bottom: none; /* Removes the border from the last project item */
+}
 .project__logo {
   text-align: center;
   margin-bottom: 0rem;
@@ -498,8 +504,11 @@ img {
 }
 
 .projects__description {
-  flex: 1;
-  margin-bottom: 3rem;
+    max-width: 1000px; /* Limits the width to keep text readable */
+    margin: 0 auto; /* Centers the text */
+    padding: 20px; /* Adds space around the text */
+    line-height: 1.6; /* Increases line spacing for better readability */
+    text-align: center; /* Justifies the text for a clean look */
 }
 
 .projects__title {
