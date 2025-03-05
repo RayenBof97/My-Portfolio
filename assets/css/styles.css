@@ -48,7 +48,6 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  
 }
 
 h1, h2, p {
@@ -313,23 +312,6 @@ img {
 }
 
 
-/* ===== WORK =====*/
-.work__container {
-  row-gap: 2rem;
-}
-.work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.work__img img {
-  transition: 2s;
-}
-.work__img img:hover {
-  transform: scale(1.1);
-}
-
-/* ===== Experience ====*/
 /* ===== EXPERIENCE ===== */
 .experience__container {
   max-width: 900px;
@@ -404,6 +386,7 @@ img {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center; /* Center the images */
   margin-top: 0.5rem;
 }
 
@@ -538,29 +521,29 @@ img {
   line-height: 1.6;
 }
 
-.projects__images {
+/* ===== Project IMAGES (Now inside the box) ===== */
+.project__images {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center; /* Center the images */
+
+  margin-top: 0.5rem;
 }
 
-.projects__img {
-  width: 48%;
+.project__img {
+  width: 100%;
+  max-width: 500px;
   border-radius: 0.5rem;
-  object-fit: cover;
   cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
-.projects__img:hover {
+.project__img:hover {
   transform: scale(1.05);
-  opacity: 0.8;
 }
-
-
 /* ===== CONTACT =====*/
-/* Contact Section */
-/* General Styles */
+
 .contact__container {
   max-width: 900px;
   margin: 0 auto;
@@ -746,11 +729,6 @@ img {
   .skills__icons {
     gap: 1.5rem; /* Reduce gap for smaller screens */
   }
-  .work__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    padding-top: 2rem;
-  }
 
 }
 
@@ -806,10 +784,6 @@ img {
   .skills__icons {
     gap: 2rem; /* Increase gap for larger screens */
   }
-  .work__container {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-  }
 }
 @media screen and (min-width: 992px) {
   .bd-grid {
@@ -841,9 +815,6 @@ img {
     width: 100%; /* Ensure items fill the container on smaller screens */
   }
 
-  .projects__img {
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -857,5 +828,10 @@ img {
 
   .contact-card__title {
     font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .project__img {
+    max-width: 90%; /* Allow images to take up 90% width on smaller screens */
   }
 }
