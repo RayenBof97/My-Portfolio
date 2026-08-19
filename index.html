@@ -523,6 +523,46 @@
                 </div>
             </div>
         </section>
+        <!-- ===== FLOATING CONTACT BULB ===== -->
+<div class="contact-fab">
+  <span class="contact-fab__label">Contact me</span>
+  <button class="contact-fab__bulb" id="contact-fab-btn" aria-label="Open contact form" aria-haspopup="dialog" aria-expanded="false">
+    <svg viewBox="0 0 24 24" class="contact-fab__icon" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2a7 7 0 0 0-4 12.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26A7 7 0 0 0 12 2z"/>
+      <path d="M9 20h6" stroke-linecap="round"/>
+      <path d="M10 22h4" stroke-linecap="round"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Contact Modal -->
+<div class="contact-modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" aria-hidden="true">
+  <div class="contact-modal__overlay" id="contact-modal-overlay"></div>
+  <div class="contact-modal__box">
+    <button class="contact-modal__close" id="contact-modal-close" aria-label="Close">&times;</button>
+    <h3 id="contact-modal-title" class="contact-modal__title">Send me a message</h3>
+    <p class="contact-modal__subtitle">It'll land straight in my inbox.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="contact-form__hidden">
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
+      <label class="contact-form__label" for="cf-name">Name</label>
+      <input class="contact-form__input" type="text" id="cf-name" name="name" required>
+
+      <label class="contact-form__label" for="cf-email">Your email</label>
+      <input class="contact-form__input" type="email" id="cf-email" name="email" required>
+
+      <label class="contact-form__label" for="cf-message">Message</label>
+      <textarea class="contact-form__input contact-form__textarea" id="cf-message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="contact-form__submit">Send message</button>
+      <p class="contact-form__status" id="contact-form-status"></p>
+    </form>
+  </div>
+</div>
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Thank you for reading !</p>

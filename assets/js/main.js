@@ -80,3 +80,59 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text , .skills_
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img ,.skills__icons ,.experience__images , .contact__card',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*===== CONTACT BULB / MODAL =====*/
+const contactFabBtn = document.getElementById('contact-fab-btn');
+const contactModal = document.getElementById('contact-modal');
+const contactModalOverlay = document.getElementById('contact-modal-overlay');
+const contactModalClose = document.getElementById('contact-modal-close');
+const contactForm = document.getElementById('contact-form');
+const contactFormStatus = document.getElementById('contact-form-status');
+
+function openContactModal(){
+    contactModal.classList.add('show');
+    contactModal.setAttribute('aria-hidden', 'false');
+    contactFabBtn.setAttribute('aria-expanded', 'true');
+}
+function closeContactModal(){
+    contactModal.classList.remove('show');
+    contactModal.setAttribute('aria-hidden', 'true');
+    contactFabBtn.setAttribute('aria-expanded', 'false');
+}
+
+contactFabBtn?.addEventListener('click', openContactModal);
+contactModalOverlay?.addEventListener('click', closeContactModal);
+contactModalClose?.addEventListener('click', closeContactModal);
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeContactModal();
+});
+
+function encodeForm(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
+contactForm?.addEventListener('submit', function(e){
+    e.preventDefault();
+    const formData = new FormData(contactForm);
+    const payload = {};
+    formData.forEach((value, key) => payload[key] = value);
+
+    contactFormStatus.textContent = "Sending...";
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodeForm(payload)
+    })
+    .then(() => {
+        contactFormStatus.textContent = "Thanks! Your message is on its way.";
+        contactForm.reset();
+        setTimeout(closeContactModal, 1800);
+    })
+    .catch((error) => {
+        contactFormStatus.textContent = "Something went wrong — try emailing me directly.";
+        console.error(error);
+    });
+});
